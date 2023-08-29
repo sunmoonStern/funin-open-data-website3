@@ -11,12 +11,7 @@ $(document).ready(function () {
 });
 
 function readyUpdate() {
-  const table = $("#data").DataTable({
-    language: {
-      infoPostFix:
-        '<br><a href="https://github.com/sunmoonStern/funin-open-data-website3">GitHub</a>'
-    }
-  });
+  const table = $("#data").DataTable();
 
   table.on("page", () => {
     draw = true;
